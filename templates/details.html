@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{movie.img.url}}" height="350" width="350"><br>
+        </div>
+    <div class="col-md-8">  
+        <h1>{{movie.name}}</h1>
+        <div class="movie-description">
+            <p>{{movie.desc}}</p>
+        </div>  
+
+        <b>{{movie.year}}</b>
+        
+        <div>
+        <a  class='btn btn-warning' href = "{% url 'movie_app:update' movie.id %} ">UPDATE</a>
+        <a  class='btn btn-danger' href = "{% url 'movie_app:delete' movie.id %} ">DELETE</a>
+        </div>
+    </div>
+    </div>
+</div> -->
+<div class="container">
+    <div class="row">
+        <!-- <div class="col-md-4s">
+            <img src="{{movie.img.url}}" height="350" width="350"><br>
+        </div> -->
+        <div class="col-md-12">
+            <h1 >{{movie.name}}</h1>
+            <div class="movie-description">
+                <div class="movie-details"> <!-- Added container for image and description alignment -->
+                    <img src="{{movie.img.url}}" height="350" width="350"><br>
+                    <p>{{movie.desc}}</p>
+                </div>
+            </div>
+            <b>{{movie.year}}</b>
+            <div>
+                <a class="btn btn-warning" href="{% url 'movie_app:update' movie.id %}">UPDATE</a>
+                <a class="btn btn-danger" href="{% url 'movie_app:delete' movie.id %}">DELETE</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,91 @@
+
+body {
+    background-color: #cdcdd8;  
+    color:rgb(0, 0, 0); 
+    text-align: center; 
+    font-size: 18px;
+   
+}
+  
+  .navbar {
+    position:relative;
+    width: 100%;
+  }
+
+
+  .form-container {
+      border: 2px solid #030202; /* Add a border around the form */
+      padding: 20px; /* Add some padding to the form */
+      border-radius: 10px; /* Add rounded corners to the form */
+      max-width: 400px; /* Set a maximum width for the form */
+      margin: 0 auto; /* Center align the form horizontally */
+      background-color: #979897; /* Add a background color to the form */
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    border: #080808;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #080808;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #2c2b2e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+  .description-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .movie-description {
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Padding around the paragraph */
+    border: 1px solid #ccc; /* Border to separate it from other content */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    line-height: 1.5; /* Line spacing */
+    text-align: justify; /* Justify the text */
+    color: #333; /* Text color */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    margin: 10px 0; /* Margin around the whole element */
+  }
+
+  /* Custom CSS for image and description alignment */
+.movie-details {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Vertically center align items */
+}
+
+.movie-details img {
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+  height: auto; /* Maintain image aspect ratio */
+  margin-right: 20px; /* Add space to separate image and description */
+}
+
+.movie-description p {
+  text-align: justify; /* Justify the text in the description */
+}
+
+/* Optional: Add margin to the buttons for spacing */
+.movie-details .btn {
+  margin-top: 10px;
+}
